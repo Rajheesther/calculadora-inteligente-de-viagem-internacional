@@ -1,0 +1,88 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(20, 20, 20, 0.95);
+  padding: 25px 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 249, 255, 0.7); /* efeito neon */
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #00f9ff; /* título neon azul */
+  text-shadow: 0 0 10px #00f9ff;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  text-align: left;
+  color: #ff00c8; /* labels em rosa neon */
+  text-shadow: 0 0 5px #ff00c8;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background: #1c1c1c;
+  border: 2px solid #00f9ff;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  box-shadow: 0 0 8px #00f9ff;
+}
+
+input:focus {
+  border-color: #ff00c8;
+  box-shadow: 0 0 10px #ff00c8;
+}
+
+button {
+  background: #39ff14;
+  color: #000;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #39ff14;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #2ecc10;
+  box-shadow: 0 0 15px #39ff14;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #f7ff00; /* resultado em amarelo neon */
+  text-shadow: 0 0 8px #f7ff00;
+}
+canvas#backgroundCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* fica atrás de tudo */
+  background: #0f0f0f;
+}
